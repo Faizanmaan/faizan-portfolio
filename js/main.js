@@ -4,11 +4,11 @@
 
 /* ---- Contact details: edit these before deploying ---- */
 const CONFIG = {
-  email: "your.email@example.com", // ← replace with your email
+  email: "faizanmustafaofficial1@gmail.com", // ← replace with your email
   socials: {
     // Leave a value empty ("") to hide that icon.
-    linkedin: "",  // e.g. "https://www.linkedin.com/in/your-handle"
-    github: "",    // e.g. "https://github.com/your-handle"
+    linkedin: "https://www.linkedin.com/in/faizan-mustafa-47a2aa203/",  // e.g. "https://www.linkedin.com/in/your-handle"
+    github: "https://github.com/Faizanmaan",    // e.g. "https://github.com/your-handle"
     upwork: "",    // e.g. "https://www.upwork.com/freelancers/~..."
     twitter: "",   // e.g. "https://x.com/your-handle"
   },
