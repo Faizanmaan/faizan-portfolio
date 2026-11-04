@@ -1,0 +1,396 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Faizan Mustafa | AI Engineer & Full-Stack SaaS Developer</title>
+  <meta name="description" content="Faizan Mustafa is a Software Engineer specializing in AI, Machine Learning & Automation: AI agent developer, full-stack SaaS engineer and MVP builder with 18+ shipped products." />
+  <meta name="theme-color" content="#06070b" />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Faizan Mustafa | AI Engineer & Full-Stack SaaS Developer" />
+  <meta property="og:description" content="AI agents, machine learning, automation and full-stack SaaS. 18+ products shipped." />
+  <meta property="og:image" content="assets/og.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Sora:wght@500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Faizan Mustafa",
+    "jobTitle": "Software Engineer — AI, Machine Learning & Automation",
+    "knowsAbout": ["Artificial Intelligence", "Machine Learning", "AI Agents", "Automation", "Full-Stack Development", "SaaS", "MVP Development"]
+  }
+  </script>
+</head>
+<body class="is-loading">
+
+  <!-- ============ PRELOADER ============ -->
+  <div class="preloader" id="preloader" aria-hidden="true">
+    <div class="preloader__inner">
+      <div class="preloader__logo">
+        <span>F</span><span>M</span>
+      </div>
+      <div class="preloader__bar"><i id="preloaderBar"></i></div>
+      <div class="preloader__count mono"><span id="preloaderCount">0</span>%</div>
+    </div>
+  </div>
+
+  <!-- ============ CURSOR + PROGRESS ============ -->
+  <div class="cursor-dot" aria-hidden="true"></div>
+  <div class="cursor-ring" aria-hidden="true"></div>
+  <div class="scroll-progress" aria-hidden="true"><i id="scrollProgress"></i></div>
+  <div class="noise" aria-hidden="true"></div>
+
+  <!-- ============ NAV ============ -->
+  <header class="nav" id="nav">
+    <div class="container nav__inner">
+      <a href="#top" class="nav__logo" aria-label="Faizan Mustafa — home">
+        <span class="nav__mark">FM</span>
+        <span class="nav__name">Faizan<b>.</b></span>
+      </a>
+      <nav class="nav__links" aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#work">Work</a>
+        <a href="#process">Process</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <a href="#contact" class="btn btn--sm btn--primary nav__cta magnetic">Let's talk</a>
+      <button class="nav__burger" id="burger" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <nav>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#work">Work</a>
+      <a href="#process">Process</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+
+  <main id="top">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="hero">
+      <canvas class="hero__canvas" id="heroCanvas" aria-hidden="true"></canvas>
+      <div class="hero__orb hero__orb--1" aria-hidden="true"></div>
+      <div class="hero__orb hero__orb--2" aria-hidden="true"></div>
+      <div class="hero__grid" aria-hidden="true"></div>
+
+      <div class="container hero__inner">
+        <div class="hero__content">
+          <div class="pill hero-in" style="--d:0">
+            <span class="pill__dot"></span> Available for new projects
+          </div>
+
+          <p class="hero__hello mono hero-in" style="--d:1">Hi, I'm</p>
+          <h1 class="hero__title">
+            <span class="split" data-split>Faizan</span>
+            <span class="split gradient-text" data-split>Mustafa</span>
+          </h1>
+
+          <p class="hero__sub hero-in" style="--d:4">
+            Software Engineer specializing in
+            <strong>AI, Machine Learning &amp; Automation</strong>.
+          </p>
+
+          <div class="hero__roles hero-in" style="--d:5">
+            <span class="mono hero__prompt">&gt;</span>
+            <span class="hero__role" id="roleText">AI Agent Developer</span><span class="caret"></span>
+          </div>
+
+          <div class="hero__ctas hero-in" style="--d:6">
+            <a href="#work" class="btn btn--primary magnetic">
+              View my work
+              <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+            <a href="#contact" class="btn btn--ghost magnetic">Hire me</a>
+          </div>
+
+          <div class="hero__stats hero-in" style="--d:7">
+            <div class="stat"><b class="counter" data-to="18" data-suffix="+">0</b><span>Products shipped</span></div>
+            <div class="stat"><b class="counter" data-to="12">0</b><span>AI-powered apps</span></div>
+            <div class="stat"><b class="counter" data-to="8">0</b><span>Healthcare AI tools</span></div>
+          </div>
+        </div>
+
+        <!-- Hero visual: animated agent terminal -->
+        <div class="hero__visual hero-in" style="--d:3">
+          <div class="orbit" aria-hidden="true">
+            <span class="orbit__chip" style="--a:0deg">LLM</span>
+            <span class="orbit__chip" style="--a:72deg">RAG</span>
+            <span class="orbit__chip" style="--a:144deg">Voice</span>
+            <span class="orbit__chip" style="--a:216deg">ML</span>
+            <span class="orbit__chip" style="--a:288deg">SaaS</span>
+          </div>
+          <div class="terminal tilt" data-tilt>
+            <div class="terminal__bar">
+              <i></i><i></i><i></i>
+              <span class="mono">agent.py — faizan@ai</span>
+            </div>
+            <pre class="terminal__body mono" id="terminal" aria-label="Animated code sample of an AI agent"></pre>
+            <div class="terminal__status">
+              <span class="pulse"></span>
+              <span class="mono" id="terminalStatus">agent online</span>
+            </div>
+          </div>
+          <div class="float-card float-card--a">
+            <div class="float-card__icon">⚡</div>
+            <div><b>Automation</b><span>Hours → seconds</span></div>
+          </div>
+          <div class="float-card float-card--b">
+            <div class="float-card__icon">🧠</div>
+            <div><b>AI Agents</b><span>Voice · Chat · Tools</span></div>
+          </div>
+        </div>
+      </div>
+
+      <a href="#about" class="scroll-cue" aria-label="Scroll down">
+        <span class="scroll-cue__mouse"><i></i></span>
+        <span class="mono">scroll</span>
+      </a>
+    </section>
+
+    <!-- ============ TECH MARQUEE ============ -->
+    <section class="marquee" aria-label="Technologies">
+      <div class="marquee__track">
+        <div class="marquee__group">
+          <span>Python</span><span>TypeScript</span><span>React</span><span>Next.js</span><span>Node.js</span><span>FastAPI</span><span>LangChain</span><span>OpenAI</span><span>LLM Agents</span><span>RAG</span><span>Voice AI</span><span>Machine Learning</span><span>PostgreSQL</span><span>MongoDB</span><span>Supabase</span><span>Docker</span><span>AWS</span><span>Vercel</span><span>n8n</span><span>Tailwind CSS</span>
+        </div>
+        <div class="marquee__group" aria-hidden="true">
+          <span>Python</span><span>TypeScript</span><span>React</span><span>Next.js</span><span>Node.js</span><span>FastAPI</span><span>LangChain</span><span>OpenAI</span><span>LLM Agents</span><span>RAG</span><span>Voice AI</span><span>Machine Learning</span><span>PostgreSQL</span><span>MongoDB</span><span>Supabase</span><span>Docker</span><span>AWS</span><span>Vercel</span><span>n8n</span><span>Tailwind CSS</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="section about" id="about">
+      <div class="container about__grid">
+        <div class="about__left">
+          <p class="eyebrow reveal">// About me</p>
+          <h2 class="h2 reveal">I turn ambitious ideas into <span class="gradient-text">intelligent products</span> people actually use.</h2>
+        </div>
+        <div class="about__right">
+          <p class="lead reveal">
+            I'm <b>Faizan Mustafa</b>, a software engineer who lives at the intersection of
+            <b>AI, machine learning and automation</b>. I design and ship end-to-end products —
+            from voice agents that answer every call, to clinical AI that writes SOAP notes, to
+            SaaS platforms that scale.
+          </p>
+          <p class="reveal">
+            Whether you need an <b>AI agent</b> that works while you sleep, a <b>full-stack SaaS</b>
+            built for growth, or an <b>MVP</b> in front of real users fast, I handle the whole journey:
+            product thinking, model and agent design, backend, frontend and deployment.
+          </p>
+          <div class="about__badges">
+            <div class="badge-card reveal"><span>🤖</span><b>AI Agent Developer</b></div>
+            <div class="badge-card reveal"><span>🧩</span><b>Full-Stack SaaS Engineer</b></div>
+            <div class="badge-card reveal"><span>🚀</span><b>MVP Builder</b></div>
+            <div class="badge-card reveal"><span>⚙️</span><b>Automation Specialist</b></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SERVICES ============ -->
+    <section class="section services" id="services">
+      <div class="container">
+        <div class="section__head">
+          <p class="eyebrow reveal">// What I do</p>
+          <h2 class="h2 reveal">Services built around <span class="gradient-text">AI&#8209;first</span> engineering</h2>
+        </div>
+
+        <div class="services__grid">
+          <article class="service spotlight reveal">
+            <div class="service__icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v3M12 18v3M5 8h14a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2Z M9 12.5h.01M15 12.5h.01"/></svg>
+            </div>
+            <h3>AI Agents &amp; Voice AI</h3>
+            <p>Autonomous agents, voice receptionists and chatbots that use tools, follow workflows and talk to customers on phone, WhatsApp, Slack and the web.</p>
+            <span class="service__num mono">01</span>
+          </article>
+          <article class="service spotlight reveal">
+            <div class="service__icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 19V5M4 19h16M8 15l3-4 3 2 5-6"/></svg>
+            </div>
+            <h3>Machine Learning</h3>
+            <p>Models for prediction, classification, document intelligence and computer vision — trained, evaluated and deployed into real products.</p>
+            <span class="service__num mono">02</span>
+          </article>
+          <article class="service spotlight reveal">
+            <div class="service__icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 8a4 4 0 1 0 0 8 4 4 0 0 0 0-8Z M12 2v3M12 19v3M2 12h3M19 12h3M4.9 4.9 7 7M17 17l2.1 2.1M4.9 19.1 7 17M17 7l2.1-2.1"/></svg>
+            </div>
+            <h3>Workflow Automation</h3>
+            <p>Connect your tools and remove repetitive work with AI-powered pipelines, integrations and back-office automations that save hours every day.</p>
+            <span class="service__num mono">03</span>
+          </article>
+          <article class="service spotlight reveal">
+            <div class="service__icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5h18v12H3z M8 21h8M12 17v4 M7 9l2 2-2 2M12 13h4"/></svg>
+            </div>
+            <h3>Full-Stack SaaS</h3>
+            <p>Production-ready SaaS with auth, dashboards, payments, APIs and databases — clean architecture designed to scale with your users.</p>
+            <span class="service__num mono">04</span>
+          </article>
+          <article class="service spotlight reveal">
+            <div class="service__icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 15c-1 1-1.5 4-1.5 4s3-.5 4-1.5M14 4c3-1 6-1 6-1s0 3-1 6l-7 7-5-5 7-7Z M9 10 5 10l-2 3 4 1M14 15v4l-3 2-1-4"/></svg>
+            </div>
+            <h3>MVP Development</h3>
+            <p>From idea to launched product in weeks. I scope ruthlessly, build fast and ship an MVP you can put in front of users and investors.</p>
+            <span class="service__num mono">05</span>
+          </article>
+          <article class="service spotlight reveal">
+            <div class="service__icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21.2l8.8-8.8a5.5 5.5 0 0 0 0-7.8Z M7 12h2.5l1.5-3 2 6 1.5-3H17"/></svg>
+            </div>
+            <h3>Healthcare AI</h3>
+            <p>Clinical documentation, medical imaging, triage, claims and patient-engagement tools — built with privacy and security in mind.</p>
+            <span class="service__num mono">06</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ WORK ============ -->
+    <section class="section work" id="work">
+      <div class="container">
+        <div class="section__head section__head--row">
+          <div>
+            <p class="eyebrow reveal">// Selected work</p>
+            <h2 class="h2 reveal">Products I've <span class="gradient-text">designed &amp; shipped</span></h2>
+          </div>
+          <p class="section__desc reveal">18 live products across AI agents, healthcare AI, SaaS and the web. Click any project for details or open the live demo.</p>
+        </div>
+
+        <div class="filters reveal" role="tablist" aria-label="Filter projects" id="filters">
+          <button class="filter is-active" data-filter="all" role="tab" aria-selected="true">All <sup id="countAll"></sup></button>
+          <button class="filter" data-filter="ai-agents" role="tab" aria-selected="false">AI Agents <sup></sup></button>
+          <button class="filter" data-filter="ai-health" role="tab" aria-selected="false">Healthcare AI <sup></sup></button>
+          <button class="filter" data-filter="saas" role="tab" aria-selected="false">SaaS <sup></sup></button>
+          <button class="filter" data-filter="web" role="tab" aria-selected="false">Web <sup></sup></button>
+          <span class="filter__indicator" id="filterIndicator"></span>
+        </div>
+
+        <div class="projects" id="projects"></div>
+      </div>
+    </section>
+
+    <!-- ============ PROCESS ============ -->
+    <section class="section process" id="process">
+      <div class="container">
+        <div class="section__head">
+          <p class="eyebrow reveal">// How I work</p>
+          <h2 class="h2 reveal">From idea to <span class="gradient-text">live product</span></h2>
+        </div>
+
+        <div class="timeline" id="timeline">
+          <div class="timeline__line"><i id="timelineFill"></i></div>
+          <div class="step reveal">
+            <div class="step__dot">1</div>
+            <div class="step__card">
+              <span class="mono">Week 0</span>
+              <h3>Discover</h3>
+              <p>We define the problem, the users and the smallest version that proves value. I map the AI, data and technical risks up front.</p>
+            </div>
+          </div>
+          <div class="step reveal">
+            <div class="step__dot">2</div>
+            <div class="step__card">
+              <span class="mono">Week 1</span>
+              <h3>Prototype</h3>
+              <p>Clickable UI and a working AI prototype: prompts, agents and models validated against real examples before we scale them.</p>
+            </div>
+          </div>
+          <div class="step reveal">
+            <div class="step__dot">3</div>
+            <div class="step__card">
+              <span class="mono">Weeks 2–5</span>
+              <h3>Build</h3>
+              <p>Full-stack development with weekly demos — auth, database, APIs, integrations and a polished, responsive frontend.</p>
+            </div>
+          </div>
+          <div class="step reveal">
+            <div class="step__dot">4</div>
+            <div class="step__card">
+              <span class="mono">Launch</span>
+              <h3>Ship &amp; Scale</h3>
+              <p>Deployment, monitoring and iteration. Your product goes live, and I keep improving it with real user feedback.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section contact" id="contact">
+      <div class="contact__glow" aria-hidden="true"></div>
+      <div class="container contact__inner">
+        <p class="eyebrow reveal">// Let's work together</p>
+        <h2 class="contact__title reveal">
+          Have an idea?<br />
+          Let's build it <span class="gradient-text" style="white-space:nowrap">with AI.</span>
+        </h2>
+        <p class="lead reveal">I'm open to freelance projects, AI product builds and full-time opportunities. Tell me about your project and I'll reply within 24 hours.</p>
+        <div class="contact__actions reveal">
+          <a href="#" class="btn btn--primary btn--lg magnetic" id="emailBtn">
+            <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M4 6h16v12H4z M4 7l8 6 8-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+            <span id="emailText">Email me</span>
+          </a>
+          <button class="btn btn--ghost btn--lg magnetic" id="copyEmail" type="button">Copy email</button>
+        </div>
+        <div class="socials reveal" id="socials"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <span>© <span id="year"></span> Faizan Mustafa. Crafted with code &amp; AI.</span>
+      <a href="#top" class="footer__top">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <!-- ============ PROJECT MODAL ============ -->
+  <div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" hidden>
+    <div class="modal__backdrop" data-close></div>
+    <div class="modal__panel">
+      <button class="modal__close" data-close aria-label="Close">✕</button>
+      <div class="modal__media">
+        <div class="browser">
+          <div class="browser__bar"><i></i><i></i><i></i><span class="browser__url mono" id="modalUrl"></span></div>
+          <img id="modalImg" alt="" />
+        </div>
+      </div>
+      <div class="modal__body">
+        <span class="modal__cat mono" id="modalCat"></span>
+        <h3 id="modalTitle"></h3>
+        <p class="modal__tagline" id="modalTagline"></p>
+        <p id="modalDesc"></p>
+        <div class="tags" id="modalTags"></div>
+        <a class="btn btn--primary" id="modalLink" target="_blank" rel="noopener">
+          Visit live project
+          <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="js/projects.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
